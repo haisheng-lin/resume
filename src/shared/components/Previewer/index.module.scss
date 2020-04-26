@@ -1,0 +1,20 @@
+@import 'assets/styles/variables.scss';
+
+.container {
+  width: 794px;
+  height: 1123px;
+  display: flex;
+  overflow: hidden;
+  font-size: $font-size-medium;
+  color: #ffffff;
+}
+
+.basic {
+  box-sizing: border-box;
+  width: 33.33%;
+}
+
+.main {
+  box-sizing: border-box;
+  width: 66.67%;
+}
