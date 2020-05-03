@@ -38,8 +38,8 @@ const Previewer: React.FC<PreviewerProps> = props => {
       <Main
         className={styles.main}
         statement={data.statement}
-        experienceList={data.experienceList}
-        projectList={data.projectList}
+        experienceList={data.experience}
+        projects={data.projects}
       />
     </div>
   );

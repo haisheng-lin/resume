@@ -9,11 +9,11 @@ interface MainProps {
   className?: string;
   statement: string;
   experienceList: Experience[];
-  projectList: Project[];
+  projects: Project[];
 }
 
 const Main: React.FC<MainProps> = props => {
-  const { className = '', statement, experienceList, projectList } = props;
+  const { className = '', statement, experienceList, projects } = props;
 
   return (
     <article
@@ -36,10 +36,10 @@ const Main: React.FC<MainProps> = props => {
         </div>
         <ol>
           {experienceList.map(experience => (
-            <li key={experience.company}>
+            <li key={experience.company} className={styles.experienceItem}>
               <h3 className={styles.company}>
                 {experience.company} ({experience.startTime} ~{' '}
-                {experience.endTime || '至今'})
+                {experience.endTime})
               </h3>
               <h4>
                 {experience.title} - {experience.department}
@@ -74,7 +74,7 @@ const Main: React.FC<MainProps> = props => {
           <h2 className={styles.title}>个人项目</h2>
         </div>
         <ul className={styles.projectList}>
-          {projectList.map(project => (
+          {projects.map(project => (
             <li key={project.name} className={styles.projectItem}>
               <h5 className={styles.projectName}>{project.name}</h5>
               <ul className={styles.contentList}>

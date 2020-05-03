@@ -44,6 +44,6 @@ export interface Resume {
   blog?: string; // 个人博客
   skills: string[]; // 专业技能
   educations: Education[]; // 学历
-  experienceList: Experience[]; // 工作经历
-  projectList: Project[]; // 个人项目
+  experience: Experience[]; // 工作经历
+  projects: Project[]; // 个人项目
 }
