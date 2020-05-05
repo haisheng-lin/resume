@@ -40,8 +40,7 @@ export interface Resume {
   job: string; // 求职岗位
   phone: string; // 电话
   email: string; // 邮箱
-  github?: string; // 同性交友账号
-  blog?: string; // 个人博客
+  socials?: string[]; // 社交账号链接
   skills: string[]; // 专业技能
   educations: Education[]; // 学历
   experience: Experience[]; // 工作经历

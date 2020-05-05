@@ -32,8 +32,7 @@ const Previewer: React.FC<PreviewerProps> = props => {
         phone={data.phone}
         email={data.email}
         skills={data.skills}
-        github={data.github}
-        blog={data.blog}
+        socials={data.socials}
       />
       <Main
         className={styles.main}

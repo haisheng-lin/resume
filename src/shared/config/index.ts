@@ -27,8 +27,11 @@ export const resume: Resume = {
   phone: '(+86) 13802720439',
   email: '504405161@qq.com',
   skills: ['html', 'css', 'JavaScript', 'TypeScript', 'React'],
-  github: 'www.github.com/haisheng-lin',
-  blog: 'haisheng-lin.github.io',
+  socials: [
+    'github.com/haisheng-lin',
+    'haisheng-lin.github.io',
+    'leetcode-cn.com/u/trafalgarlaw',
+  ],
   experience: [
     {
       company: '晓教育',

@@ -14,8 +14,7 @@ interface AsideProps {
   phone: string; // 电话
   email: string; // 邮箱
   skills: string[]; // 技能
-  github?: string;
-  blog?: string;
+  socials?: string[]; // 社交链接
 }
 
 const Aside: React.FC<AsideProps> = props => {
@@ -28,8 +27,7 @@ const Aside: React.FC<AsideProps> = props => {
     phone,
     email,
     skills,
-    github,
-    blog,
+    socials,
   } = props;
 
   const renderMajorDesc = (major: string | string[]) => {
@@ -120,10 +118,13 @@ const Aside: React.FC<AsideProps> = props => {
             <i className={classNames('fa', 'fa-link', styles.largeIcon)} />
             <h2 className={styles.title}>其他链接</h2>
           </div>
-          <ol className={styles.detailList}>
-            {github && <li>{github}</li>}
-            {blog && <li>{blog}</li>}
-          </ol>
+          {socials && (
+            <ol className={styles.detailList}>
+              {socials.map(link => (
+                <li key={link}>{link}</li>
+              ))}
+            </ol>
+          )}
         </li>
       </ol>
     </aside>
