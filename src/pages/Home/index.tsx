@@ -16,10 +16,7 @@ const Home: React.FC = () => {
 
   return (
     <main className={styles.container}>
-      {!isPreview && (
-        <section className={styles.left}>TODO: 以后有编辑栏</section>
-      )}
-      <section className={styles.right}>
+      <section className={styles.section}>
         <Previewer data={resume} />
       </section>
       <ul className={styles.btnList}>

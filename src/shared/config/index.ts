@@ -60,9 +60,8 @@ export const resume: Resume = {
                 '使用多种方案优化项目性能，提高开发环境与构建时的编译速度 25%，降低首屏加载时间 50%',
             },
             {
-              category: '其他',
-              description:
-                '维护代码使用说明文档，降低开发成员间的沟通成本；成功定位某次迭代版本的页面白屏问题原因并解决；升级 TypeScript 版本，提高开发体验与效率',
+              category: '分享协同',
+              description: '维护代码使用说明文档，降低开发成员间的沟通成本',
             },
           ],
         },
@@ -80,9 +79,9 @@ export const resume: Resume = {
                 '落实应用构建方式从 create-react-app 转为自己实现的脚手架插件，使构建配置自由度更高，同时开发模式下增加模块选择编译功能，提高开发编译速度',
             },
             {
-              category: '其他',
+              category: '分享协同',
               description:
-                '协助组内成员进行 code review 以及算法分享，提升组员对代码规范及算法认知；对旧代码进行重构，将某模块代码量从 2400+ 行降至 1200+ 行，提升项目可维护性及质量',
+                '协助组内同事进行 code review 与算法分享，建立团队的代码规范及提高算法认知',
             },
           ],
         },
@@ -111,9 +110,23 @@ export const resume: Resume = {
   ],
   projects: [
     {
+      name: 'common-webpack-builder (开发中)',
+      points: [
+        {
+          category: '概况',
+          description: '为个人项目提供通用的工程化构建插件',
+        },
+        {
+          category: '详情',
+          description:
+            '基于公司的工程化架构方案，开发一套满足自身需求的通用插件；实现项目的本地开发、打包构建、线上部署的构建流程与配置优化',
+        },
+      ],
+    },
+    {
       name: 'ts-axios',
       points: [
-        { category: '描述', description: '使用 TypeScript 实现 axios' },
+        { category: '概况', description: '使用 TypeScript 实现 axios' },
         {
           category: '地址',
           description: 'https://github.com/haisheng-lin/ts-axios',

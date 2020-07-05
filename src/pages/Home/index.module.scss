@@ -4,15 +4,7 @@
   display: flex;
 }
 
-.left {
-  display: inline-block;
-  width: 25%;
-  padding: 24px;
-  min-width: 200px;
-  border-right: 1px solid #e0e0e0;
-}
-
-.right {
+.section {
   display: inline-block;
   width: 75%;
   padding: 24px;
@@ -46,7 +38,7 @@
   .btnList {
     display: none;
   }
-  .right {
+  .section {
     padding: 0;
   }
 }
