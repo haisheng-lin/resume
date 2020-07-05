@@ -10,11 +10,19 @@ export interface Education {
 }
 
 /**
+ * 项目描述
+ */
+export interface ProjectPoint {
+  category: string;
+  description: string;
+}
+
+/**
  * 项目经历
  */
 export interface Project {
   name: string; // 项目名
-  contents: string[]; // 项目描述
+  points: ProjectPoint[]; // 项目描述
 }
 
 /**

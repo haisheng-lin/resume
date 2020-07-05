@@ -54,10 +54,13 @@ const Main: React.FC<MainProps> = props => {
                   <li key={project.name} className={styles.projectItem}>
                     <h5 className={styles.projectName}>{project.name}</h5>
                     <ul className={styles.contentList}>
-                      {project.contents.map(content => (
-                        <li key={content} className={styles.content}>
+                      {project.points.map(point => (
+                        <li key={point.category} className={styles.content}>
                           <span className={styles.dot} />
-                          <span>{content}</span>
+                          <strong className={styles.highlight}>
+                            {point.category}:{' '}
+                          </strong>
+                          <span>{point.description}</span>
                         </li>
                       ))}
                     </ul>
@@ -78,10 +81,13 @@ const Main: React.FC<MainProps> = props => {
             <li key={project.name} className={styles.projectItem}>
               <h5 className={styles.projectName}>{project.name}</h5>
               <ul className={styles.contentList}>
-                {project.contents.map(content => (
-                  <li key={content} className={styles.content}>
+                {project.points.map(point => (
+                  <li key={point.category} className={styles.content}>
                     <span className={styles.dot} />
-                    <span>{content}</span>
+                    <strong className={styles.highlight}>
+                      {point.category}：
+                    </strong>
+                    <span>{point.description}</span>
                   </li>
                 ))}
               </ul>
