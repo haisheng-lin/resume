@@ -12,7 +12,7 @@ export interface Education {
 /**
  * 项目描述
  */
-export interface ProjectPoint {
+export interface Achievement {
   category: string;
   description: string;
 }
@@ -22,7 +22,7 @@ export interface ProjectPoint {
  */
 export interface Project {
   name: string; // 项目名
-  points: ProjectPoint[]; // 项目描述
+  achievements: Achievement[];
 }
 
 /**
@@ -34,8 +34,7 @@ export interface Experience {
   startTime: string; // 开始工作时间
   endTime: string; // 结束工作时间
   department: string; // 部门
-  summary?: string; // 公司简介
-  projects: Project[]; // 负责项目
+  achievements: Achievement[]; // 成就
 }
 
 /**
@@ -52,5 +51,5 @@ export interface Resume {
   skills: string[]; // 专业技能
   educations: Education[]; // 学历
   experience: Experience[]; // 工作经历
-  projects: Project[]; // 个人项目
+  projects?: Project[]; // 个人项目
 }

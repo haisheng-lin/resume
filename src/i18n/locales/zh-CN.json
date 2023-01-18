@@ -1,0 +1,25 @@
+{
+  "print": "打印",
+  "education": "教育经历",
+  "contact": "联系方式",
+  "skills": "专业技能",
+  "links": "其他链接",
+  "summary": "概要",
+  "experience": "项目经历",
+  "now": "至今",
+  "resume": {
+    "summary": "目前正在晓教育工作，有意向寻找新的 web 前端工程师岗位",
+    "name": "林海晟",
+    "job": "前端工程师",
+    "master": "硕士",
+    "bachelor": "学士",
+    "asu": "亚利桑那州立大学",
+    "gdufs": "广东外语外贸大学",
+    "computerScience": "计算机科学",
+    "finance": "金融学",
+    "xiao": {
+      "company": "晓教育",
+      "department": "销售运营部 & C 端用户产品部"
+    }
+  }
+}
