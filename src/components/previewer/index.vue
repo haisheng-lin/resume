@@ -18,6 +18,7 @@ defineProps<{
 <style lang="less" scoped>
 @import '@/assets/styles/vars.less';
 .previewer-container {
+  margin: 0 auto;
   width: 794px;
   height: 1123px;
   display: flex;

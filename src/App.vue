@@ -10,9 +10,7 @@ function handlePrint() {
 
 <template>
   <main class="app-container">
-    <section class="app-section">
-      <Previewer :resume="resume" />
-    </section>
+    <Previewer :resume="resume" />
     <ul class="app-ops">
       <Button @click="handlePrint">{{ $t('print') }}</Button>
     </ul>
@@ -21,11 +19,6 @@ function handlePrint() {
 
 <style lang="less" scoped>
 .app-container {
-  display: flex;
-}
-.app-section {
-  display: inline-block;
-  width: 75%;
   padding: 24px;
 }
 .app-ops {
@@ -39,11 +32,11 @@ function handlePrint() {
 
 /* 打印时样式 */
 @media print {
+  .app-container {
+    padding: 0;
+  }
   .app-ops {
     display: none;
-  }
-  .app-section {
-    padding: 0;
   }
 }
 </style>

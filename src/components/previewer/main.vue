@@ -35,10 +35,7 @@ defineProps<{
               v-for="achievement in exp.achievements"
               class="main-achievement"
             >
-              <strong class="main-achievement--highlight">
-                {{ achievement.category }}:
-              </strong>
-              <span>{{ achievement.description }}</span>
+              {{ achievement }}
             </li>
           </ul>
         </li>
@@ -126,8 +123,5 @@ defineProps<{
     background-color: @color-theme;
     border-radius: 50%;
   }
-}
-.main-achievement--highlight {
-  font-weight: bold;
 }
 </style>

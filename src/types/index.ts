@@ -10,19 +10,11 @@ export interface Education {
 }
 
 /**
- * 项目描述
- */
-export interface Achievement {
-  category: string;
-  description: string;
-}
-
-/**
  * 项目经历
  */
 export interface Project {
   name: string; // 项目名
-  achievements: Achievement[];
+  achievements: string[];
 }
 
 /**
@@ -34,7 +26,7 @@ export interface Experience {
   startTime: string; // 开始工作时间
   endTime: string; // 结束工作时间
   department: string; // 部门
-  achievements: Achievement[]; // 成就
+  achievements: string[]; // 成就
 }
 
 /**
