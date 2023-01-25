@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Previewer from '@/components/previewer/index.vue';
+import Resume from '@/components/resume/index.vue';
 import Button from '@/components/button.vue';
 import { resume } from '@/config';
 
@@ -10,7 +10,7 @@ function handlePrint() {
 
 <template>
   <main class="app-container">
-    <Previewer :resume="resume" />
+    <Resume :resume="resume" />
     <ul class="app-ops">
       <Button @click="handlePrint">{{ $t('print') }}</Button>
     </ul>

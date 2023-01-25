@@ -1,4 +1,15 @@
 /**
+ * 基本信息
+ */
+export interface Profile {
+  name: string; // 名字
+  gender: 'male' | 'female'; // 性别
+  age: number; // 年龄
+  phone: string; // 电话
+  email: string; // 邮箱
+}
+
+/**
  * 教育经历
  */
 export interface Education {
@@ -33,15 +44,11 @@ export interface Experience {
  * 简历信息
  */
 export interface Resume {
-  statement: string; // 个人陈述
-  name: string; // 名字
-  avatar: string; // 头像地址
-  job: string; // 求职岗位
-  phone: string; // 电话
-  email: string; // 邮箱
-  socials?: string[]; // 社交账号链接
-  skills: string[]; // 专业技能
+  summary: string; // 概述
+  profile: Profile; // 基本信息
   educations: Education[]; // 学历
   experience: Experience[]; // 工作经历
   projects?: Project[]; // 个人项目
+  skills?: string[]; // 专业技能
+  links?: string[]; // 其他链接
 }
