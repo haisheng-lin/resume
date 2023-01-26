@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import FaIcon from '@/components/fa-icon.vue';
+import SVGIcon from '@/components/svg-icon.vue';
 
 defineProps<{
   icon?: string;
@@ -11,7 +11,7 @@ defineProps<{
   <section class="resume-section">
     <div class="section-header">
       <div class="section-header--container">
-        <FaIcon v-if="icon" class="section-header--icon" :type="icon" />
+        <SVGIcon v-if="icon" :name="icon" :size="20" fill="#ffffff" />
         <h2 class="section-header--title">{{ title }}</h2>
       </div>
     </div>

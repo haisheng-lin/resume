@@ -16,7 +16,7 @@ defineProps<{
     <h2 class="resume-title">
       {{ $t('resumeTitle', [resume.profile.name]) }}
     </h2>
-    <Section icon="user" :title="$t('summary')">
+    <Section icon="comment" :title="$t('summary')">
       <span>{{ resume.summary }}</span>
     </Section>
     <Section icon="user" :title="$t('profile')">
@@ -25,7 +25,7 @@ defineProps<{
     <Section icon="graduation-cap" :title="$t('education')">
       <Educations :educations="resume.educations" />
     </Section>
-    <Section icon="bug" :title="$t('experience')">
+    <Section icon="briefcase" :title="$t('experience')">
       <Experience :experience="resume.experience" />
     </Section>
     <Section v-if="resume.skills" icon="book" :title="$t('skills')">
