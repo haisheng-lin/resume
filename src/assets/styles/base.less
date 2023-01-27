@@ -1,0 +1,14 @@
+body,
+html {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -webkit-print-color-adjust: exact; /* 用于正常打印颜色，有兼容问题 */
+}
+
+@media print {
+  @page {
+    size: A4;
+  }
+}
