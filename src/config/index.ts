@@ -44,7 +44,8 @@ export const resume: Resume = {
         i18n.global.t('resume.kingsoft.achievement1'),
         i18n.global.t('resume.kingsoft.achievement2'),
         i18n.global.t('resume.kingsoft.achievement3'),
-        i18n.global.t('resume.kingsoft.achievement4')
+        i18n.global.t('resume.kingsoft.achievement4'),
+        i18n.global.t('resume.kingsoft.achievement5')
       ]
     },
     {
@@ -59,6 +60,18 @@ export const resume: Resume = {
         i18n.global.t('resume.xiao.achievement3'),
         i18n.global.t('resume.xiao.achievement4'),
         i18n.global.t('resume.xiao.achievement5')
+      ]
+    },
+    {
+      company: i18n.global.t('resume.tuling.company'),
+      title: i18n.global.t('resume.job'),
+      startTime: '2018.07',
+      endTime: '2019.04',
+      department: i18n.global.t('resume.tuling.department'),
+      achievements: [
+        i18n.global.t('resume.tuling.achievement1'),
+        i18n.global.t('resume.tuling.achievement2'),
+        i18n.global.t('resume.tuling.achievement3')
       ]
     }
   ],

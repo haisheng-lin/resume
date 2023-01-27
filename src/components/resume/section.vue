@@ -11,7 +11,7 @@ defineProps<{
   <section class="resume-section">
     <div class="section-header">
       <div class="section-header--container">
-        <SVGIcon v-if="icon" :name="icon" :size="20" fill="#ffffff" />
+        <SVGIcon v-if="icon" :name="icon" :size="16" fill="#ffffff" />
         <h2 class="section-header--title">{{ title }}</h2>
       </div>
     </div>
