@@ -11,7 +11,12 @@ defineProps<{
   <section class="resume-section">
     <div class="section-header">
       <div class="section-header--container">
-        <SVGIcon v-if="icon" :name="icon" :size="16" fill="#ffffff" />
+        <SVGIcon
+          v-if="icon"
+          :name="icon"
+          :size="16"
+          fill="var(--text-color-secondary)"
+        />
         <h2 class="section-header--title">{{ title }}</h2>
       </div>
     </div>
@@ -23,7 +28,6 @@ defineProps<{
 @import '@/assets/styles/vars.less';
 .resume-section {
   margin-top: 16px;
-  color: #4a4a4a;
   &:first-child {
     margin-top: 0;
   }
@@ -40,9 +44,9 @@ defineProps<{
   align-items: center;
   padding-left: 12px;
   padding-right: 80px;
-  font-size: @font-size-large-x;
-  background-color: @color-theme;
-  color: @color-theme-l;
+  font-size: @font-size-large;
+  background-color: var(--primary-color);
+  color: var(--text-color-secondary);
   border-radius: 4px;
 }
 .section-header--title {

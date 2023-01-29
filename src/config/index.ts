@@ -2,6 +2,7 @@ import i18n from '@/i18n';
 import type { Resume } from '@/types';
 
 export const resume: Resume = {
+  url: 'https://haisheng-lin.github.io/resume',
   summary: i18n.global.t('resume.summary'),
   profile: {
     name: i18n.global.t('resume.name'),
@@ -70,8 +71,7 @@ export const resume: Resume = {
       department: i18n.global.t('resume.tuling.department'),
       achievements: [
         i18n.global.t('resume.tuling.achievement1'),
-        i18n.global.t('resume.tuling.achievement2'),
-        i18n.global.t('resume.tuling.achievement3')
+        i18n.global.t('resume.tuling.achievement2')
       ]
     }
   ],
