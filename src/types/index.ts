@@ -44,6 +44,7 @@ export interface Experience {
  * 简历信息
  */
 export interface Resume {
+  url?: string; // 在线简历链接
   summary: string; // 概述
   profile: Profile; // 基本信息
   educations: Education[]; // 学历

@@ -16,6 +16,9 @@ defineProps<{
     <h2 class="resume-title">
       {{ $t('resumeTitle', [resume.profile.name]) }}
     </h2>
+    <h3 v-if="resume.url" class="resume-subtitle">
+      {{ resume.url }}
+    </h3>
     <Section icon="comment" :title="$t('summary')">
       <span>{{ resume.summary }}</span>
     </Section>
@@ -41,13 +44,25 @@ defineProps<{
 @import '@/assets/styles/vars.less';
 .resume-container {
   margin: 0 auto;
-  width: 800px;
+  width: 760px;
   font-size: @font-size-medium;
 }
-.resume-title {
-  margin-bottom: 16px;
-  font-size: 32px;
+.resume-title,
+.resume-subtitle {
+  margin-bottom: 0;
   text-align: center;
+}
+.resume-title {
+  font-size: 24px;
   font-weight: bold;
+}
+.resume-subtitle {
+  font-size: 14px;
+}
+
+@media print {
+  .resume-container {
+    width: auto;
+  }
 }
 </style>

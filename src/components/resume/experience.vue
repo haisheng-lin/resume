@@ -61,7 +61,7 @@ defineProps<{
     width: 8px;
     height: 8px;
     vertical-align: middle;
-    background-color: @color-theme;
+    background-color: var(--primary-color);
     border-radius: 50%;
   }
 }
