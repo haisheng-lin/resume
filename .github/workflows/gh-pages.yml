@@ -1,0 +1,34 @@
+name: GitHub Pages
+
+on:
+  # https://github.com/orgs/community/discussions/26724
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md' # 只更改 md 文件不触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3 # 相当于 git clone 到当前运行的机器上
+      - name: Installation
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.16.1 # 指定 pnpm 版本
+          run_install: true # pnpm install dependencies recursively
+      - name: Build
+        run: pnpm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          folder: dist
+          # ACCESS_TOKEN 属性名，必须与仓库 secret 名保持一致
+          # 查看：https://github.com/haisheng-lin/resume/settings/secrets/actions
+          # 该 token 是 personal access token，至少需要本项目的代码修改权限
+          # 查看：https://github.com/settings/tokens?type=beta
+          # repository permissions -> contents: Read and Write
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
