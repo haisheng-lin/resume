@@ -1,20 +1,12 @@
 name: GitHub Pages
 
 on:
+  # https://github.com/orgs/community/discussions/26724
   push:
-    branches:
-      - dev
-    paths-ignore:
-      - '**.md'
-  pull_request:
     branches:
       - master
     paths-ignore:
       - '**.md' # 只更改 md 文件不触发
-
-# https://github.com/JamesIves/github-pages-deploy-action/issues/1285
-permissions:
-  contents: write
 
 jobs:
   build-and-deploy:
@@ -33,5 +25,10 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           folder: dist
+          # ACCESS_TOKEN 属性名，必须与仓库 secret 名保持一致
+          # 查看：https://github.com/haisheng-lin/resume/settings/secrets/actions
+          # 该 token 是 personal access token，至少需要本项目的代码修改权限
+          # 查看：https://github.com/settings/tokens?type=beta
+          # repository permissions -> contents: Read and Write
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
