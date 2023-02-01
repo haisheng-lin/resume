@@ -12,6 +12,10 @@ on:
     paths-ignore:
       - '**.md' # 只更改 md 文件不触发
 
+# https://github.com/JamesIves/github-pages-deploy-action/issues/1285
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
