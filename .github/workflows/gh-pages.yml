@@ -1,0 +1,29 @@
+name: GitHub Pages
+
+on:
+  [push, pull_request]:
+    branches:
+      - master
+      - dev
+    paths-ignore:
+      - '**.md' # 只更改 md 文件不触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3 # 相当于 git clone 到当前运行的机器上
+      - name: Installation
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.16.1 # 指定 pnpm 版本
+          run_install: true # pnpm install dependencies recursively
+      - name: Build
+        run: pnpm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          folder: dist
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
