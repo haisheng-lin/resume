@@ -33,5 +33,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           folder: dist
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
