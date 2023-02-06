@@ -17,6 +17,9 @@ defineProps<{
           {{ exp.startTime }}-{{ exp.endTime }}
         </strong>
       </div>
+      <span v-if="exp.dimissionReason">
+        {{ $t('dimissionLabel', [exp.dimissionReason]) }}
+      </span>
       <ul class="resume-experience-achievements">
         <li v-for="achievement in exp.achievements" class="resume-achievement">
           {{ achievement }}

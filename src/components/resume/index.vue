@@ -31,9 +31,6 @@ defineProps<{
     <Section icon="briefcase" :title="$t('experience')">
       <Experience :experience="resume.experience" />
     </Section>
-    <Section v-if="resume.skills" icon="book" :title="$t('skills')">
-      <span>{{ resume.skills.join(', ') }}</span>
-    </Section>
     <Section v-if="resume.links" icon="link" :title="$t('links')">
       <Links :links="resume.links" />
     </Section>
