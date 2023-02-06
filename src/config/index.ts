@@ -47,7 +47,8 @@ export const resume: Resume = {
         i18n.global.t('resume.kingsoft.achievement3'),
         i18n.global.t('resume.kingsoft.achievement4'),
         i18n.global.t('resume.kingsoft.achievement5')
-      ]
+      ],
+      dimissionReason: i18n.global.t('resume.kingsoft.dimissionReason')
     },
     {
       company: i18n.global.t('resume.xiao.company'),
@@ -61,7 +62,8 @@ export const resume: Resume = {
         i18n.global.t('resume.xiao.achievement3'),
         i18n.global.t('resume.xiao.achievement4'),
         i18n.global.t('resume.xiao.achievement5')
-      ]
+      ],
+      dimissionReason: i18n.global.t('resume.xiao.dimissionReason')
     },
     {
       company: i18n.global.t('resume.tuling.company'),
@@ -72,7 +74,8 @@ export const resume: Resume = {
       achievements: [
         i18n.global.t('resume.tuling.achievement1'),
         i18n.global.t('resume.tuling.achievement2')
-      ]
+      ],
+      dimissionReason: i18n.global.t('resume.tuling.dimissionReason')
     }
   ],
   skills: ['git', 'html', 'css', 'JavaScript', 'TypeScript', 'webpack'],
