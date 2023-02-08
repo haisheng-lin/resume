@@ -20,11 +20,34 @@ defineProps<{
       <span v-if="exp.dimissionReason">
         {{ $t('dimissionLabel', [exp.dimissionReason]) }}
       </span>
-      <ul class="resume-experience-achievements">
-        <li v-for="achievement in exp.achievements" class="resume-achievement">
-          {{ achievement }}
-        </li>
-      </ul>
+      <div v-if="exp.works" class="resume-experience--section">
+        <h4 class="resume-section--title">
+          {{ $t('jobDescriptionLabel') }}
+        </h4>
+        <ul>
+          <li
+            v-for="work in exp.works"
+            :key="work"
+            class="resume-section--point"
+          >
+            {{ work }}
+          </li>
+        </ul>
+      </div>
+      <div v-if="exp.achievements" class="resume-experience--section">
+        <h4 class="resume-section--title">
+          {{ $t('achievementLabel') }}
+        </h4>
+        <ul>
+          <li
+            v-for="achievement in exp.achievements"
+            :key="achievement"
+            class="resume-section--point"
+          >
+            {{ achievement }}
+          </li>
+        </ul>
+      </div>
     </li>
   </ul>
 </template>
@@ -32,7 +55,7 @@ defineProps<{
 <style lang="less" scoped>
 @import '@/assets/styles/vars.less';
 .resume-experience {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -53,10 +76,13 @@ defineProps<{
   font-size: @font-size-medium;
   line-height: @font-size-large;
 }
-.resume-experience-achievements {
-  margin-top: 8px;
+.resume-experience--section {
+  margin-top: 4px;
 }
-.resume-achievement {
+.resume-section--title {
+  font-weight: bold;
+}
+.resume-section--point {
   &::before {
     content: '';
     display: inline-block;

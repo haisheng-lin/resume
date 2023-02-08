@@ -41,12 +41,18 @@ export const resume: Resume = {
       startTime: '2020.08',
       endTime: i18n.global.t('now'),
       department: i18n.global.t('resume.kingsoft.department'),
+      works: [
+        i18n.global.t('resume.kingsoft.work1'),
+        i18n.global.t('resume.kingsoft.work2'),
+        i18n.global.t('resume.kingsoft.work3')
+      ],
       achievements: [
         i18n.global.t('resume.kingsoft.achievement1'),
         i18n.global.t('resume.kingsoft.achievement2'),
         i18n.global.t('resume.kingsoft.achievement3'),
         i18n.global.t('resume.kingsoft.achievement4'),
-        i18n.global.t('resume.kingsoft.achievement5')
+        i18n.global.t('resume.kingsoft.achievement5'),
+        i18n.global.t('resume.kingsoft.achievement6')
       ],
       dimissionReason: i18n.global.t('resume.kingsoft.dimissionReason')
     },
@@ -56,12 +62,14 @@ export const resume: Resume = {
       startTime: '2019.04',
       endTime: '2020.06',
       department: i18n.global.t('resume.xiao.department'),
+      works: [
+        i18n.global.t('resume.xiao.work1'),
+        i18n.global.t('resume.xiao.work2'),
+        i18n.global.t('resume.xiao.work3')
+      ],
       achievements: [
         i18n.global.t('resume.xiao.achievement1'),
-        i18n.global.t('resume.xiao.achievement2'),
-        i18n.global.t('resume.xiao.achievement3'),
-        i18n.global.t('resume.xiao.achievement4'),
-        i18n.global.t('resume.xiao.achievement5')
+        i18n.global.t('resume.xiao.achievement2')
       ],
       dimissionReason: i18n.global.t('resume.xiao.dimissionReason')
     },
@@ -71,10 +79,6 @@ export const resume: Resume = {
       startTime: '2018.07',
       endTime: '2019.04',
       department: i18n.global.t('resume.tuling.department'),
-      achievements: [
-        i18n.global.t('resume.tuling.achievement1'),
-        i18n.global.t('resume.tuling.achievement2')
-      ],
       dimissionReason: i18n.global.t('resume.tuling.dimissionReason')
     }
   ],
