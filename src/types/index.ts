@@ -37,7 +37,8 @@ export interface Experience {
   startTime: string; // 开始工作时间
   endTime: string; // 结束工作时间
   department: string; // 部门
-  achievements: string[]; // 成就
+  works?: string[]; // 工作内容
+  achievements?: string[]; // 业绩成就
   dimissionReason?: string; // 离职原因
 }
 
