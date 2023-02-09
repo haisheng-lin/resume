@@ -52,7 +52,8 @@ export const resume: Resume = {
         i18n.global.t('resume.kingsoft.achievement3'),
         i18n.global.t('resume.kingsoft.achievement4'),
         i18n.global.t('resume.kingsoft.achievement5'),
-        i18n.global.t('resume.kingsoft.achievement6')
+        i18n.global.t('resume.kingsoft.achievement6'),
+        i18n.global.t('resume.kingsoft.achievement7')
       ],
       dimissionReason: i18n.global.t('resume.kingsoft.dimissionReason')
     },

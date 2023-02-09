@@ -4,7 +4,6 @@ import Section from './section.vue';
 import Profile from './profile.vue';
 import Educations from './educations.vue';
 import Experience from './experience.vue';
-import Links from './links.vue';
 
 defineProps<{
   resume: Resume;
@@ -59,6 +58,7 @@ defineProps<{
 
 @media print {
   .resume-container {
+    padding: 12px;
     width: auto;
   }
 }

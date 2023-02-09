@@ -64,5 +64,9 @@ function handlePrint() {
   .app-header {
     display: none;
   }
+  .app-container,
+  .app-main {
+    padding: 0;
+  }
 }
 </style>

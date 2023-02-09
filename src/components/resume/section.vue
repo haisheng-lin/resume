@@ -35,7 +35,7 @@ defineProps<{
 .section-header {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   padding-bottom: 8px;
   border-bottom: 1px solid #e0e0e0;
 }
