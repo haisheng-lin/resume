@@ -52,7 +52,8 @@ export const resume: Resume = {
         i18n.global.t('resume.kingsoft.achievement3'),
         i18n.global.t('resume.kingsoft.achievement4'),
         i18n.global.t('resume.kingsoft.achievement5'),
-        i18n.global.t('resume.kingsoft.achievement6')
+        i18n.global.t('resume.kingsoft.achievement6'),
+        i18n.global.t('resume.kingsoft.achievement7')
       ],
       dimissionReason: i18n.global.t('resume.kingsoft.dimissionReason')
     },
@@ -82,6 +83,6 @@ export const resume: Resume = {
       dimissionReason: i18n.global.t('resume.tuling.dimissionReason')
     }
   ],
-  skills: ['git', 'html', 'css', 'JavaScript', 'TypeScript', 'webpack'],
+  skills: ['git', 'html', 'css', 'JavaScript', 'TypeScript', 'vue', 'webpack'],
   links: ['https://github.com/haisheng-lin']
 };
