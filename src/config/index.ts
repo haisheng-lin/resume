@@ -82,6 +82,6 @@ export const resume: Resume = {
       dimissionReason: i18n.global.t('resume.tuling.dimissionReason')
     }
   ],
-  skills: ['git', 'html', 'css', 'JavaScript', 'TypeScript', 'webpack'],
+  skills: ['git', 'html', 'css', 'JavaScript', 'TypeScript', 'vue', 'webpack'],
   links: ['https://github.com/haisheng-lin']
 };
