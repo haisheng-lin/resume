@@ -7,6 +7,7 @@ export interface Profile {
   age: number; // 年龄
   phone: string; // 电话
   email: string; // 邮箱
+  languages?: string[]; // 语言
 }
 
 /**
@@ -37,7 +38,8 @@ export interface Experience {
   startTime: string; // 开始工作时间
   endTime: string; // 结束工作时间
   department: string; // 部门
-  works?: string[]; // 工作内容
+  introductions?: string[]; // 项目介绍
+  responsibilities?: string[]; // 工作内容
   achievements?: string[]; // 业绩成就
   dimissionReason?: string; // 离职原因
 }

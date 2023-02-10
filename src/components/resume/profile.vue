@@ -15,6 +15,9 @@ defineProps<{
     <span class="resume-profile--right">
       {{ $t('email') }}: {{ profile.email }}
     </span>
+    <span v-if="profile.languages">
+      {{ $t('language') }}: {{ profile.languages.join(', ') }}
+    </span>
   </div>
 </template>
 

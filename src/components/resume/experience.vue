@@ -20,13 +20,27 @@ defineProps<{
       <span v-if="exp.dimissionReason">
         {{ $t('dimissionLabel', [exp.dimissionReason]) }}
       </span>
-      <div v-if="exp.works" class="resume-experience--section">
+      <div v-if="exp.introductions">
         <h4 class="resume-section--title">
-          {{ $t('jobDescriptionLabel') }}
+          {{ $t('projectIntroduction') }}
         </h4>
         <ul>
           <li
-            v-for="work in exp.works"
+            v-for="introduction in exp.introductions"
+            :key="introduction"
+            class="resume-section--point"
+          >
+            {{ introduction }}
+          </li>
+        </ul>
+      </div>
+      <div v-if="exp.responsibilities" class="resume-experience--section">
+        <h4 class="resume-section--title">
+          {{ $t('responsibility') }}
+        </h4>
+        <ul>
+          <li
+            v-for="work in exp.responsibilities"
             :key="work"
             class="resume-section--point"
           >
@@ -36,7 +50,7 @@ defineProps<{
       </div>
       <div v-if="exp.achievements" class="resume-experience--section">
         <h4 class="resume-section--title">
-          {{ $t('achievementLabel') }}
+          {{ $t('achievement') }}
         </h4>
         <ul>
           <li
