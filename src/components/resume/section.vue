@@ -27,7 +27,7 @@ defineProps<{
 <style lang="less" scoped>
 @import '@/assets/styles/vars.less';
 .resume-section {
-  margin-top: 16px;
+  margin-top: 8px;
   &:first-child {
     margin-top: 0;
   }

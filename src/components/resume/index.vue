@@ -4,6 +4,7 @@ import Section from './section.vue';
 import Profile from './profile.vue';
 import Educations from './educations.vue';
 import Experience from './experience.vue';
+import Links from './links.vue';
 
 defineProps<{
   resume: Resume;
@@ -32,6 +33,9 @@ defineProps<{
     </Section>
     <Section v-if="resume.skills" icon="book" :title="$t('skills')">
       <span>{{ resume.skills.join(', ') }}</span>
+    </Section>
+    <Section v-if="resume.links" icon="link" :title="$t('links')">
+      <Links :links="resume.links" />
     </Section>
   </article>
 </template>
