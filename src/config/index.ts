@@ -44,58 +44,88 @@ export const resume: Resume = {
   ],
   experience: [
     {
-      company: i18n.global.t('resume.kingsoft.company'),
+      company: i18n.global.t('resume.experience.kingsoft.company'),
       title: i18n.global.t('resume.job'),
       startTime: '2020.08',
       endTime: i18n.global.t('now'),
-      department: i18n.global.t('resume.kingsoft.department'),
-      introductions: [
-        i18n.global.t('resume.kingsoft.introduction1'),
-        i18n.global.t('resume.kingsoft.introduction2')
-      ],
-      responsibilities: [
-        i18n.global.t('resume.kingsoft.responsibility1'),
-        i18n.global.t('resume.kingsoft.responsibility2'),
-        i18n.global.t('resume.kingsoft.responsibility3')
-      ],
-      achievements: [
-        i18n.global.t('resume.kingsoft.achievement1'),
-        i18n.global.t('resume.kingsoft.achievement2'),
-        i18n.global.t('resume.kingsoft.achievement3'),
-        i18n.global.t('resume.kingsoft.achievement4'),
-        i18n.global.t('resume.kingsoft.achievement5'),
-        i18n.global.t('resume.kingsoft.achievement6'),
-        i18n.global.t('resume.kingsoft.achievement7')
-      ],
-      dimissionReason: i18n.global.t('resume.kingsoft.dimissionReason')
+      department: i18n.global.t('resume.experience.kingsoft.department'),
+      introduction: i18n.global.t('resume.experience.kingsoft.introduction'),
+      dimissionReason: i18n.global.t(
+        'resume.experience.kingsoft.dimissionReason'
+      )
     },
     {
-      company: i18n.global.t('resume.xiao.company'),
+      company: i18n.global.t('resume.experience.xiao.company'),
       title: i18n.global.t('resume.job'),
       startTime: '2019.04',
       endTime: '2020.06',
-      department: i18n.global.t('resume.xiao.department'),
-      introductions: [i18n.global.t('resume.xiao.introduction1')],
-      responsibilities: [
-        i18n.global.t('resume.xiao.responsibility1'),
-        i18n.global.t('resume.xiao.responsibility2'),
-        i18n.global.t('resume.xiao.responsibility3')
-      ],
-      achievements: [
-        i18n.global.t('resume.xiao.achievement1'),
-        i18n.global.t('resume.xiao.achievement2')
-      ],
-      dimissionReason: i18n.global.t('resume.xiao.dimissionReason')
+      department: i18n.global.t('resume.experience.xiao.department'),
+      introduction: i18n.global.t('resume.experience.xiao.introduction'),
+      dimissionReason: i18n.global.t('resume.experience.xiao.dimissionReason')
     },
     {
-      company: i18n.global.t('resume.tuling.company'),
+      company: i18n.global.t('resume.experience.tuling.company'),
       title: i18n.global.t('resume.job'),
       startTime: '2018.07',
       endTime: '2019.04',
-      department: i18n.global.t('resume.tuling.department'),
-      dimissionReason: i18n.global.t('resume.tuling.dimissionReason')
+      department: i18n.global.t('resume.experience.tuling.department'),
+      dimissionReason: i18n.global.t('resume.experience.tuling.dimissionReason')
     }
   ],
-  skills: ['git', 'html', 'css', 'JavaScript', 'TypeScript', 'vue', 'webpack'],
+  projects: [
+    {
+      name: i18n.global.t('resume.projects.notion.name'),
+      introduction: i18n.global.t('resume.projects.notion.introduction'),
+      responsibilities: [
+        i18n.global.t('resume.projects.notion.responsibility1'),
+        i18n.global.t('resume.projects.notion.responsibility2')
+      ],
+      achievements: [
+        i18n.global.t('resume.projects.notion.achievement1'),
+        i18n.global.t('resume.projects.notion.achievement2'),
+        i18n.global.t('resume.projects.notion.achievement3')
+      ]
+    },
+    {
+      name: i18n.global.t('resume.projects.admin.name'),
+      introduction: i18n.global.t('resume.projects.admin.introduction'),
+      responsibilities: [
+        i18n.global.t('resume.projects.admin.responsibility1'),
+        i18n.global.t('resume.projects.admin.responsibility2')
+      ],
+      achievements: [
+        i18n.global.t('resume.projects.admin.achievement1'),
+        i18n.global.t('resume.projects.admin.achievement2'),
+        i18n.global.t('resume.projects.admin.achievement3'),
+        i18n.global.t('resume.projects.admin.achievement4'),
+        i18n.global.t('resume.projects.admin.achievement5'),
+        i18n.global.t('resume.projects.admin.achievement6'),
+        i18n.global.t('resume.projects.admin.achievement7')
+      ]
+    },
+    {
+      name: i18n.global.t('resume.projects.course.name'),
+      introduction: i18n.global.t('resume.projects.course.introduction'),
+      responsibilities: [
+        i18n.global.t('resume.projects.course.responsibility1'),
+        i18n.global.t('resume.projects.course.responsibility2'),
+        i18n.global.t('resume.projects.course.responsibility3')
+      ],
+      achievements: [
+        i18n.global.t('resume.projects.course.achievement1'),
+        i18n.global.t('resume.projects.course.achievement2')
+      ]
+    }
+  ],
+  skills: [
+    'git',
+    'html',
+    'css',
+    'JavaScript',
+    'TypeScript',
+    'Vue',
+    'React',
+    'webpack'
+  ],
   links: ['https://github.com/haisheng-lin']
 };

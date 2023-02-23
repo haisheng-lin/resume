@@ -26,7 +26,9 @@ export interface Education {
  */
 export interface Project {
   name: string; // 项目名
-  achievements: string[];
+  introduction: string;
+  responsibilities: string[]; // 工作内容
+  achievements: string[]; // 业绩成就
 }
 
 /**
@@ -38,9 +40,7 @@ export interface Experience {
   startTime: string; // 开始工作时间
   endTime: string; // 结束工作时间
   department: string; // 部门
-  introductions?: string[]; // 项目介绍
-  responsibilities?: string[]; // 工作内容
-  achievements?: string[]; // 业绩成就
+  introduction?: string; // 介绍
   dimissionReason?: string; // 离职原因
 }
 
@@ -53,7 +53,7 @@ export interface Resume {
   profile: Profile; // 基本信息
   educations: Education[]; // 学历
   experience: Experience[]; // 工作经历
-  projects?: Project[]; // 个人项目
+  projects: Project[]; // 项目经历
   skills?: string[]; // 专业技能
   links?: string[]; // 其他链接
 }

@@ -4,6 +4,7 @@ import Section from './section.vue';
 import Profile from './profile.vue';
 import Educations from './educations.vue';
 import Experience from './experience.vue';
+import Project from './project.vue';
 import Links from './links.vue';
 
 defineProps<{
@@ -30,6 +31,9 @@ defineProps<{
     </Section>
     <Section icon="briefcase" :title="$t('experience')">
       <Experience :experience="resume.experience" />
+    </Section>
+    <Section icon="briefcase" :title="$t('project')">
+      <Project :projects="resume.projects" />
     </Section>
     <Section v-if="resume.skills" icon="book" :title="$t('skills')">
       <span>{{ resume.skills.join(', ') }}</span>
@@ -58,6 +62,12 @@ defineProps<{
 }
 .resume-subtitle {
   font-size: 14px;
+}
+
+@media screen and (max-width: @pc-min-width) {
+  .resume-container {
+    width: auto;
+  }
 }
 
 @media print {

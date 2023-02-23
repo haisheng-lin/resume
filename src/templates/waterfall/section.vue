@@ -40,10 +40,10 @@ defineProps<{
   border-bottom: 1px solid #e0e0e0;
 }
 .section-header--container {
-  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 12px;
+  padding-right: 80px;
   font-size: @font-size-large;
   background-color: var(--primary-color);
   color: var(--text-color-secondary);
@@ -52,5 +52,14 @@ defineProps<{
 .section-header--title {
   margin-left: 12px;
   font-weight: bold;
+}
+
+@media screen and (max-width: @pc-min-width) {
+  .section-header--container {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 </style>

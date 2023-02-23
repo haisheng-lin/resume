@@ -22,6 +22,7 @@ defineProps<{
 </template>
 
 <style lang="less" scoped>
+@import '@/assets/styles/vars.less';
 .resume-profile {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
@@ -31,5 +32,19 @@ defineProps<{
 }
 .resume-profile--right {
   text-align: right;
+}
+
+@media screen and (max-width: @pc-min-width) {
+  .resume-profile {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+  }
+  .resume-profile--middle {
+    text-align: left;
+  }
+  .resume-profile--right {
+    text-align: left;
+  }
 }
 </style>
