@@ -76,7 +76,7 @@
       },
       "course": {
         "name": "在线报读",
-        "introduction": "为家长提供课程报读的混合式开发 app 应用，内嵌 web 端页面。",
+        "introduction": "为家长提供课程报读的混合式开发 app 应用，致力于为学生提供高品质的教学产品与优质的教学服务，全面提升学生的学习成绩与学习体验。",
         "responsibility1": "设计部门 js bridge 方案、接口规范并落地实现，统一 SDK 接入",
         "responsibility2": "搭建前端错误日志收集上报，及对接监控追踪平台，监控脚本执行错误、接口错误、资源错误",
         "responsibility3": "参与部门前端质效建设，设计工程化方案并开发脚手架，协助 code review 并整理代码规范",
