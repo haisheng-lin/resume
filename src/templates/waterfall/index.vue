@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { Resume } from '@/types';
+import self from '@/assets/images/self.jpg';
 import Section from './section.vue';
 import Profile from './profile.vue';
 import Educations from './educations.vue';
@@ -14,17 +15,20 @@ defineProps<{
 
 <template>
   <article class="resume-container">
-    <h2 class="resume-title">
-      {{ $t('resumeTitle', [resume.profile.name]) }}
-    </h2>
-    <h3 v-if="resume.url" class="resume-subtitle">
-      {{ resume.url }}
-    </h3>
-    <Section icon="comment" :title="$t('summary')">
-      <span>{{ resume.summary }}</span>
-    </Section>
+    <div class="resume-header">
+      <img class="resume-header--avatar" :src="self" />
+      <h2 class="resume-header--title">
+        {{ $t('resumeTitle', [resume.profile.name]) }}
+      </h2>
+      <h3 v-if="resume.url" class="resume-header--subtitle">
+        {{ resume.url }}
+      </h3>
+    </div>
     <Section icon="user" :title="$t('profile')">
       <Profile :profile="resume.profile" />
+    </Section>
+    <Section icon="comment" :title="$t('summary')">
+      <span>{{ resume.summary }}</span>
     </Section>
     <Section icon="graduation-cap" :title="$t('education')">
       <Educations :educations="resume.educations" />
@@ -51,22 +55,34 @@ defineProps<{
   width: 760px;
   font-size: @font-size-medium;
 }
-.resume-title,
-.resume-subtitle {
+.resume-header {
+  position: relative;
+}
+.resume-header--avatar {
+  position: absolute;
+  display: none;
+  width: 72px;
+  right: 0px;
+}
+.resume-header--title,
+.resume-header--subtitle {
   margin-bottom: 0;
   text-align: center;
 }
-.resume-title {
+.resume-header--title {
   font-size: 24px;
   font-weight: bold;
 }
-.resume-subtitle {
+.resume-header--subtitle {
   font-size: 14px;
 }
 
 @media screen and (max-width: @pc-min-width) {
   .resume-container {
     width: auto;
+  }
+  .resume-avatar {
+    display: none;
   }
 }
 

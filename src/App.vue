@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import SVGIcon from '@/components/svg-icon.vue';
-import { resume } from '@/config';
+import useResumeData from '@/hooks/useResumeData';
 import useTheme from '@/hooks/useTheme';
+import useLocales from '@/hooks/useLocales';
 import WaterfallResume from '@/templates/waterfall/index.vue';
 
 const { isDarkTheme, switchTheme } = useTheme();
+const { locale, switchLocale } = useLocales();
+const resume = useResumeData();
 
 function handlePrint() {
   window.print();
@@ -14,6 +17,9 @@ function handlePrint() {
 <template>
   <div class="app-container">
     <header class="app-header">
+      <span class="app-ops--item" @click="switchLocale">
+        {{ locale }}
+      </span>
       <SVGIcon
         class="app-ops--item"
         fill="var(--text-color)"
