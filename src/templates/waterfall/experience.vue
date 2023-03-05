@@ -10,15 +10,14 @@ defineProps<{
   <ul class="resume-experience">
     <li v-for="exp in experience" :key="exp.company">
       <div class="resume-experience--base">
-        <h3 class="resume-experience--company">
-          {{ exp.company }} - {{ exp.title }}
-        </h3>
+        <h3 class="resume-experience--company">{{ exp.company }}</h3>
         <strong class="resume-experience--time">
           {{ exp.startTime }}-{{ exp.endTime }}
         </strong>
       </div>
-      <div v-if="exp.dimissionReason">
-        {{ $t('dimissionLabel', [exp.dimissionReason]) }}
+      <div>{{ $t('jobTitleLabel', [exp.title]) }}</div>
+      <div v-if="exp.resignationReason">
+        {{ $t('resignationLabel', [exp.resignationReason]) }}
       </div>
       <div v-if="exp.introduction" class="resume-experience--section">
         {{ exp.introduction }}

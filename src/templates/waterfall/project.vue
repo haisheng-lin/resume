@@ -32,6 +32,20 @@ defineProps<{
           </li>
         </ul>
       </div>
+      <div v-if="project.challenges" class="resume-project--section">
+        <h4 class="resume-section--title">
+          {{ $t('challenge') }}
+        </h4>
+        <ul>
+          <li
+            v-for="challenge in project.challenges"
+            :key="challenge"
+            class="resume-section--point"
+          >
+            {{ challenge }}
+          </li>
+        </ul>
+      </div>
       <div class="resume-project--section">
         <h4 class="resume-section--title">
           {{ $t('achievement') }}

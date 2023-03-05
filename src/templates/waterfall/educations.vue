@@ -10,14 +10,17 @@ defineProps<{
   <ul>
     <li
       v-for="education in educations"
-      :key="education.school"
+      :key="education.school.name"
       class="resume-education"
     >
       <strong class="resume-education--left">
         {{ education.major }} ({{ education.degree }})
       </strong>
       <strong class="resume-education--middle">
-        {{ education.school }}
+        <span>{{ education.school.name }}</span>
+        <span v-if="education.school.introduction">
+          ({{ education.school.introduction }})
+        </span>
       </strong>
       <span class="resume-education--right">
         {{ education.startTime }}-{{ education.endTime }}
@@ -29,7 +32,7 @@ defineProps<{
 <style lang="less" scoped>
 .resume-education {
   display: grid;
-  grid-template-columns: repeat(3, 33.33%);
+  grid-template-columns: 35% 45% 20%;
 }
 .resume-education--left {
   font-weight: bold;

@@ -1,0 +1,97 @@
+{
+  "resumeTitle": "{0}'s Resume",
+  "male": "male",
+  "female": "female",
+  "summary": "Summary",
+  "profile": "Basic Profile",
+  "language": "Language",
+  "mandarin": "Mandarin",
+  "english": "English",
+  "education": "Education",
+  "experience": "Experience",
+  "project": "Project",
+  "name": "Name",
+  "phone": "Phone",
+  "email": "Email",
+  "master": "Master",
+  "bachelor": "Bachelor",
+  "asu": "Arizona State University",
+  "asuIntro": "QS rank 200-220",
+  "gdufs": "Guangdong University of Foreign Studies",
+  "computerScience": "Computer Science",
+  "finance": "Finance",
+  "skills": "Skills",
+  "links": "Links",
+  "jobTitleLabel": "Position: {0}",
+  "resignationLabel": "Resignation Reason: {0}",
+  "projectIntroduction": "Introduction",
+  "responsibility": "Responsibilities",
+  "challenge": "Challenges",
+  "achievement": "Achievements",
+  "resume": {
+    "summary": "Four years+ experience in front-end development and looking for front-end job in Guangzhou.",
+    "name": "Haisheng Lin",
+    "job": "Front-end Developer",
+    "englishRemark": "English (CET6 {cet6Score}/TOFEL {tofelScore})",
+    "experience": {
+      "tuling": {
+        "company": "Guangzhou Tuling Network Technology Co.,Ltd",
+        "department": "技术部",
+        "resignationReason": "Dissolution due to badly run"
+      },
+      "xiao": {
+        "company": "Guangdong Xiao Education Technology Co.,Ltd",
+        "department": "销售运营部 & C 端用户产品部",
+        "resignationReason": "Decline in business due to the impact of COVID-19 and “Double Deduction” policy",
+        "introduction": "To develop an online education service platform, to increase online traffic to convert into users and to support online enrollment. Among these, I mainly support the development of the admin system and the Wechat subscription page."
+      },
+      "kingsoft": {
+        "company": "Zhuhai Kingsoft Office Software Co.,Ltd",
+        "department": "wps+",
+        "resignationReason": "Business Line Restructuring",
+        "introduction": "To support the solutions provision for collaboration and security management, through WPS Cloud platform which is for enterprise-level office. Due to the business needs, the business line has expanded from domestic public service to multiple services including public, private, international etc., which increases the complexity of the project."
+      }
+    },
+    "projects": {
+      "notion": {
+        "name": "Collaboration Workspace",
+        "introduction": "An all-in-one collaboration platform for enterprise team, helps manage team members and team assets to realize the function of integrated knowledge base, Kingsoft spreadsheets and Kingsoft docs etc.",
+        "responsibility1": "Participate in design reviews, develop web front-end features and collaborate with PMs and QAs",
+        "responsibility2": "Design and initiate the project; provide support for fresh grads to get along with the project, by splitting task and providing instructions on project specification and solutions.",
+        "challenge1": "Integration with existing projects causes performance issue",
+        "challenge2": "Incompatibility between framework version required by component library and that in project",
+        "challenge3": "Delivery pressure due to short of human resources at early stage, and collaboration issue due to increasing fresh grads at later stage",
+        "achievement1": "Help fresh grads to get along with the project in one week and to independently develop modules, by writing project documentation and providing instructions",
+        "achievement2": "Optimize project building and reduce the build time by 36%, from 161s to 103s",
+        "achievement3": "Integrate other web apps (Kingsoft spreadsheets and Kingsoft docs etc.) into project via micro front-end solution (micro-app), to solve the difficulties on integrated collaboration cross teams",
+        "achievement4": "Solute incompatibile framework version required by component library, by webpack5 federation"
+      },
+      "admin": {
+        "name": "Enterprise Admin System",
+        "introduction": "An enterprise admin system with multi-apps integrated, manages different kinds of enterprise assets. Main modules include corporate information, corporate structure, team management, operation log and enterprise security setting etc..",
+        "responsibility1": "Participate in design reviews, develop web front-end features and collaborate with PMs and QAs",
+        "responsibility2": "Participate in the improvement scheme on the quality and efficiency of front-end engineering, including scaffolding and solution for i18n resource management",
+        "challenge1": "Compilation speed in development mode was too slow and impacted the efficiency due to large scale of project and obsolete technology stack",
+        "challenge2": "Due to business needs, web app features may differ to that in other environments and the build material of the project in one environment is mixed with irrelevant features of other environments",
+        "challenge3": "Simultaneous iteration of multiple business lines reduces project quality and maintainability",
+        "challenge4": "The business needs to support multiple languages, and the daily maintenance of multiple languages is complicated and repetitive, which increases the workload of multiple parties",
+        "achievement1": "Write unit test cases with Jest and increase average line coverage rate to above 85%. Improve delivery quality and ensure 0 fatal bugs in production",
+        "achievement2": "Setup general project specification with tools (Eslint, Commitlint etc.) and discipline developers to follow specification, in order to improve development quality",
+        "achievement3": "Setup Gitlab CI/CD for automated pipeline to integrate multiple process monitoring, and identify potential issues in advance",
+        "achievement4": "Design and implement solution for i18n resource management to reduce the costs of both maintenance and test regression by 0.5-1 hour per human resource in average, and extend the application to other business",
+        "achievement5": "Refactor old modules to improve the maintainability and user experience",
+        "achievement6": "Remove unreachable modules and reduced 56KB build materials by code optimization and solutions",
+        "achievement7": "Split the application in terms of business line, via a micro-app solution named Qiankun, to solve the problems of increased project scale, and maintenance difficulty due to increased business, through the research on solutions for splitting large application"
+      },
+      "course": {
+        "name": "Online Enrollment",
+        "introduction": "A hybrid app for parents to enroll courses for their children, is to provide high quality educational program and service for students and to improve the score and learning experience of students",
+        "responsibility1": "Design and implement js bridge solution and API specification as npm package used by teams",
+        "responsibility2": "Setup system to collection and reporting the exception in web app, and to monitor script runtime error, API error and network error",
+        "responsibility3": "Participate in the improvement scheme on the quality and efficiency of front-end engineering, design engineering scheme and develop scaffolding, assist with code review and collate specifications",
+        "achievement1": "By implementing the web exception monitoring system, debugging and fixing captured errors, to improve the efficiency to locate bugs, the error rate has been reduced from 16% to 11%",
+        "achievement2": "Optimize performance with the build compilation speed improved by 25%"
+      }
+    }
+  }
+}

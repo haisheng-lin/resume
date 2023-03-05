@@ -10,11 +10,16 @@ export interface Profile {
   languages?: string[]; // 语言
 }
 
+interface School {
+  name: string;
+  introduction?: string;
+}
+
 /**
  * 教育经历
  */
 export interface Education {
-  school: string; // 学校
+  school: School; // 学校
   degree: string; // 学历
   major: string | string[]; // 专业
   startTime: string; // 时间
@@ -29,6 +34,7 @@ export interface Project {
   introduction: string;
   responsibilities: string[]; // 工作内容
   achievements: string[]; // 业绩成就
+  challenges?: string[]; // 难点
 }
 
 /**
@@ -41,7 +47,7 @@ export interface Experience {
   endTime: string; // 结束工作时间
   department: string; // 部门
   introduction?: string; // 介绍
-  dimissionReason?: string; // 离职原因
+  resignationReason?: string; // 离职原因
 }
 
 /**
